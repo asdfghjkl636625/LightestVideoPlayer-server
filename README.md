@@ -1,9 +1,11 @@
 # LightestVideoPlayer Server
 
 A local HLS relay server for LightestVideoPlayer.
+
 Memory usage remains at 10 MB even while streaming.
 
 It returns the YouTube HLS master m3u8 URL. Even if the video and audio are separated, it processes the EXT-X-MEDIA header from the hls.js master as-is.
+
 
 ## Requirements
 
