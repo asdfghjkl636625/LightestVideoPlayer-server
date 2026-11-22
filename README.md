@@ -10,6 +10,7 @@ It returns the YouTube HLS master m3u8 URL. Even if the video and audio are sepa
 ## Requirements
 
 - Python
+
 https://www.python.org/downloads/
 - yt-dlp
 ```bash
