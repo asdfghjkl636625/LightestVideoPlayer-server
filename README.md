@@ -1,10 +1,9 @@
 # LightestVideoPlayer Server
 
-Local HLS relay server for LightestVideoPlayer.
+A local HLS relay server for LightestVideoPlayer.
+Memory usage remains at 10 MB even while streaming.
 
-It launches yt-dlp as a subprocess only when opening a video (using about 10 MB while idle),
-and returns the YouTube HLS master m3u8 URL. Even if the video and audio are separated,
-hls.js processes the master’s EXT-X-MEDIA as-is.
+It returns the YouTube HLS master m3u8 URL. Even if the video and audio are separated, it processes the EXT-X-MEDIA header from the hls.js master as-is.
 
 ## Requirements
 
