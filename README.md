@@ -2,6 +2,10 @@
 
 Local HLS relay server for LightestVideoPlayer.
 
+It launches yt-dlp as a subprocess only when opening a video (using about 10 MB while idle),
+and returns the YouTube HLS master m3u8 URL. Even if the video and audio are separated,
+hls.js processes the master’s EXT-X-MEDIA as-is.
+
 ## Requirements
 
 - Python
