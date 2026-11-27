@@ -17,20 +17,11 @@ https://www.python.org/downloads/
 pip install -U yt-dlp
 ```
 
-## Install
-
-Requires Python 3.10+ and Git.
-
-```bash
-pip install git+https://github.com/asdfghjkl636625/LightestVideoPlayer-server.git
-```
-
 ## Usage
 
 ```bash
 python lvp_server.py
 ```
-
 
 ```bash
 python lvp_server.py --port 8765
