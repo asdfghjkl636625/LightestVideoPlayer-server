@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lightestvideoplayer-server"
+version = "0.1.0"
+description = "A local HLS relay server for LightestVideoPlayer"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = [
+    "yt-dlp[default]",
+    "streamlink",
+]
+
+[project.urls]
+Repository = "https://github.com/asdfghjkl636625/LightestVideoPlayer-server"
+
+[project.scripts]
+lvp-server = "lvp_server:main"
+
+[tool.setuptools]
+py-modules = ["lvp_server"]
